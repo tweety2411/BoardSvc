@@ -1,0 +1,23 @@
+custom:
+  oauth2:
+    kakao:
+      client-id: 6b76be906df6e807d713bfe96305fa3b
+      client-secret: f1h0KfL036uYmxiU6Uspa0JQ4qvHc3Ws
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1072757889779-jl6sgo2n6bkah675le3o9c3fami3379i.apps.googleusercontent.com
+            client-secret: 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
+        provider:
+          kakao:
+            authorization_uri: https://kauth.kakao.com/oauth/authorize
+            token_uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user_name_attribute: id
+
+  main:
+    allow-circular-references: true
